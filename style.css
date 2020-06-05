@@ -32,6 +32,7 @@ body {
   background: var(--page-4-color)
 }
 
+/* Page Styles */
 .page {
   display: flex;
   flex-direction: column;
@@ -52,6 +53,7 @@ body {
   font-size: 1.3rem;
 }
 
+/* Button Styles*/
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -73,4 +75,28 @@ body {
 .btn-dark:hover {
   background: #f4f4f4;
   color: #333;
+}
+
+/* Page Animations */
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p {
+  transform: translateX(-1800px);
+  animation: text var(--animate-speed) forwards ease-in 1s;
+}
+
+/* Keyframes */
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes text {
+  to {
+    transform: translateX(0);
+  }
 }
